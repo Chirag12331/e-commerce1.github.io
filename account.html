@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All products -Red store</title>
+    <link rel="stylesheet" href="style.css">
+   
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.csss">
+</head>
+<body>
+    
+    <div class="container">
+        <nav>
+            <img src="logo.png" width="125px" class="img"> 
+
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Account</a></li>
+            </ul>
+            <img src="cart.png" class="img2">
+            <img src="menu.png" class="img16">
+        </nav>
+
+        
+    </div>
+
+
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="image1.png" width="100%">
+                </div>
+                <div class="col-2">
+                   <div class="form-container">
+                       <div class="form-btn">
+                           <span onclick="Login()">Login</span>
+                           <span onclick="register()">Register</span>
+                           <hr id="indicator">
+                       </div>
+                       <form id="loginform">
+                           <input type="text" placeholder="username">
+                           <input type="password" placeholder="password"><br>
+                           <button type="submit" class="btn">Login</button><br>
+                           <a href="">forgot password</a>
+                       </form>
+
+                       <form id="regform">
+                        <input type="text" placeholder="username">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="password"><br>
+                        <button type="submit" class="btn">Register</button><br>
+                       
+                    </form>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  
+    
+
+    
+
+   
+
+
+   
+    <footer>
+        <div class="footer">
+        <img src="play-store.png" class="img15">
+        <img src="app-store.png" class="img15">
+        <p>@2021 chirag E-commerce don't copy this image</p>
+    </footer>
+
+
+    <script>
+         var loginform=document.getElementById("loginform");
+         var regform=document.getElementById("regform");
+         var indicator =document.getElementById("indicator");
+
+          function register(){ 
+                               regform.style.transform="translateX(0px)";
+                               loginform.style.transform="translateX(0px)";
+                               indicator.style.transform="translateX(100px)";
+                    }
+                    function Login(){ 
+                               regform.style.transform="translateX(300px)";
+                               loginform.style.transform="translateX(300px)";
+                               indicator.style.transform="translateX(0px)";
+                    }
+
+        </script>
+</body>
+</html>
